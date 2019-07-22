@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+   margin: 30px;
+   width: 345px;
+   padding: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.inputBox {
+    position: relative;
+}
+.inputBox input{
+    display: inline-block;
+    width: 300px;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.inputBox span {
+    position: absolute;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    right:0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('./imgs/proper.png') no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 12px;
+    display: none;
+}
+
+.canvasBox {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    /* border: 1px solid #000; */
+}
+
+.canvasBox .imgBox {
+    width:  300px;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.canvasBox .refresh {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url('./imgs/refresh.png');
+    background-size: 100%;
+    border: 0;
+    outline: none;
+
+}
+
+.submit {
+    padding: 10px 20px;
+    border: 0;
+    background-color: greenyellow;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}   

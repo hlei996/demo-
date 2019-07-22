@@ -72,7 +72,7 @@ function  bindEvent() {
                     var j = index % 5;
                     var i = Math.floor(index / 5)
                     var $this = $(this)
-                    $(this).animate({'opacity': 1},200, function(){
+                    $(this).animate({'opacity': 1,},200, function(){
                         $(this).find('img').css({
                             'position': 'absolute',
                             'width': '100%',
@@ -81,7 +81,7 @@ function  bindEvent() {
                             'top': 0
                         });
                         $this.find('img').attr('src', './img/img_' + (index + 1)  + '.png')
-
+                    
                         $(this).css({
                             // 随机
                             'width': liW + 'px',
@@ -92,7 +92,6 @@ function  bindEvent() {
                                 'transLateX(' + (30 * i - 60) + 'px' +')' +
                                 'transLateY(' + (30 * i - 60) + 'px' + ')' +
                                 'transLateZ(-' + Math.random() * 500 + 'px' + ')' ,
-                            'transition': 'all 1.2s'
                         })
                     })
                 })
